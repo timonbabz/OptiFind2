@@ -133,7 +133,6 @@ public class SignUp extends AppCompatActivity {
     @Override
     protected void onStart(){
         super.onStart();
-        checkIfUserExists();
         mAuth.addAuthStateListener(mAuthListener);
     }
 
@@ -180,7 +179,6 @@ public class SignUp extends AppCompatActivity {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
                             progressDialog.dismiss();
-                            checkIfUserExists();
                             Toast.makeText(SignUp.this, "Sign in failed, please try again", Toast.LENGTH_LONG).show();
 
                         }
@@ -189,29 +187,5 @@ public class SignUp extends AppCompatActivity {
                 });
     }
 
-    public void checkIfUserExists(){
-
-        if (mAuth.getCurrentUser() != null){
-
-            final String user_id = mAuth.getCurrentUser().getUid();
-            mDatabase.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-
-                    if(dataSnapshot.hasChild(user_id)){
-
-                        startActivity(new Intent(SignUp.this, MapsDisplay.class));
-                    }else {
-                        startActivity(new Intent(SignUp.this, SetUpAccount.class));
-                    }
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            });
-        }
-    }
 
 }

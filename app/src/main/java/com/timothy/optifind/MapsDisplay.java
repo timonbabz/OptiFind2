@@ -170,29 +170,9 @@ public class MapsDisplay extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        checkIfUserExists();
         mAuth.addAuthStateListener(mAuthListener);
     }
 
-    public void checkIfUserExists(){
-
-        final String user_id = mAuth.getCurrentUser().getUid();
-        mDatabase.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-
-                if(!dataSnapshot.hasChild(user_id)){
-
-                    startActivity(new Intent(MapsDisplay.this, SetUpAccount.class));
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-    }
 
 }
 
