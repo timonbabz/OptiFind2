@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">OptiFind</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string-array name="categories">
+        <item>Select main category</item>
+        <item>Services</item>
+        <item>Retail</item>
+        <item>Wholesale</item>
+    </string-array>
+
+    <string-array name="subcategories">
+        <item>Subcategory</item>
+    </string-array>
+
+    <string-array name="services">
+        <item>Select service</item>
+        <item>Agencies</item>
+        <item>Financial</item>
+        <item>Computer/ICT</item>
+        <item>Hospital/health</item>
+        <item>Education</item>
+        <item>Miscellaneous</item>
+    </string-array>
+
+    <string-array name="retail">
+        <item>Select retail</item>
+        <item>Department stores</item>
+        <item>Discount stores</item>
+        <item>Supermarket</item>
+        <item>Warehouse stores</item>
+        <item>Specialty stores</item>
+        <item>Malls</item>
+        <item>E-tailers</item>
+        <item>Mom and pop shop</item>
+    </string-array>
+
+    <string-array name="wholesale">
+        <item>Select wholesale</item>
+        <item>Merchant</item>
+        <item>General</item>
+        <item>Specialty</item>
+        <item>Specific product</item>
+        <item>Discount</item>
+        <item>Drop ship</item>
+        <item>On-line</item>
+    </string-array>
+</resources>

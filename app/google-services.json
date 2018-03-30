@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "252260898416",
+    "firebase_url": "https://optifind2-1519192612254.firebaseio.com",
+    "project_id": "optifind2-1519192612254",
+    "storage_bucket": "optifind2-1519192612254.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252260898416:android:cb11ccaafd4dfc3e",
+        "android_client_info": {
+          "package_name": "com.timothy.optifind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252260898416-ctsjpohfkfp2e9rru32lduv61n7j9qgk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.timothy.optifind",
+            "certificate_hash": "a54815a7b7c4ba9cfd5ffa679529d6686fc0abeb"
+          }
+        },
+        {
+          "client_id": "252260898416-5gg0tdfed5r1cl7lhrs9dhj08ne42a50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjSOciMU6ErvVpxnal-ndh3vqJImOK33g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252260898416-5gg0tdfed5r1cl7lhrs9dhj08ne42a50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

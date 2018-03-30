@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#ff0000</color>
+    <color name="blue_shed">#007acc</color>
+    <color name="white">#ffffff</color>
+    <color name="sky_blue">#1ab2ff</color>
+    <color name="greish">#a6a6a6</color>
+    <color name="startcolor">#004d99</color>
+    <color name="light_blue">#80bfff</color>
+    <color name="black">#000000</color>
+    <color name="color_on_sign_in_credentials">#d0e6ef</color>
+</resources>

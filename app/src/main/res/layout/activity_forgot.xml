@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.timothy.optifind.ForgotActivity">
+
+    <LinearLayout
+        android:background="@drawable/gradientaccount"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_forgot"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/applogo"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:id="@+id/forgotpasstxt"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="email@example.com"
+            android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/submit_forgot"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/white"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="20sp"
+            android:background="@drawable/signupstyle"/>
+    </LinearLayout>
+
+</RelativeLayout>

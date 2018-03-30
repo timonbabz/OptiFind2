@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.timothy.optifind.SetUpAccount">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/gradientaccount">
+
+        <ImageButton
+            android:id="@+id/image_profile"
+            android:src="@drawable/appopti"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="60dp"/>
+
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/given_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColorHint="@color/greish"
+            android:hint="Given name"
+            android:background="@drawable/text_border"/>
+
+        <Button
+            android:id="@+id/msubmit"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Create"
+            android:background="@drawable/signupstyle"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
