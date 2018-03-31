@@ -100,6 +100,7 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/btnAddBiz"
             android:gravity="center_horizontal"
             android:background="@drawable/signupstyle"
             android:text="Add"
