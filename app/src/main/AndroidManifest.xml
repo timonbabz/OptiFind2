@@ -79,7 +79,8 @@
         <activity
             android:name=".BusinessList"
             android:theme="@style/secondTheme" />
-        <activity android:name=".ActivityBizList" />
+        <activity android:name=".ActivityBizList"
+            android:theme="@style/secondTheme"/>
     </application>
 
 </manifest>

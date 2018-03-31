@@ -1,6 +1,7 @@
 package com.timothy.optifind;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -124,15 +125,16 @@ public class AddBusiness extends AppCompatActivity{
         String subCategory = spinnerSubcat.getSelectedItem().toString();
 
         DatabaseReference newBusiness = mDatabase.push();
-        newBusiness.child("Business name").setValue(businessName);
-        newBusiness.child("Business location").setValue(businessLocation);
-        newBusiness.child("Business latitude").setValue(businessLatitude);
-        newBusiness.child("Business longitude").setValue(businessLong);
-        newBusiness.child("Business category").setValue(mainCategory);
-        newBusiness.child("Business subcategory").setValue(subCategory).addOnSuccessListener(new OnSuccessListener<Void>() {
+        newBusiness.child("bizName").setValue(businessName);
+        newBusiness.child("bizLocation").setValue(businessLocation);
+        newBusiness.child("bizLatitude").setValue(businessLatitude);
+        newBusiness.child("bizLongitude").setValue(businessLong);
+        newBusiness.child("bizCategory").setValue(mainCategory);
+        newBusiness.child("bizSubcategory").setValue(subCategory).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
                 mProgress.dismiss();
+                startActivity(new Intent(AddBusiness.this, ActivityBizList.class));
             }
         });
 
